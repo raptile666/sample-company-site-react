@@ -1,0 +1,52 @@
+.navbar{
+    height: 3vh;
+    display: flex;
+    width: 100%;
+    background-color: #2b2b2b;
+    margin-top: 15px;
+    position: sticky;
+    top: 15px;
+    left: 15px;
+}
+
+.nav-right{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.nav-right a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 0px 50px;
+}
+
+.borderLink{
+    border-right: 2px solid aliceblue;
+}
+
+.nav-right a:after {
+    content: '';
+    display: block;
+    padding-top: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+    
+.nav-right a:hover:after {
+    width: 100%;
+    background: aliceblue;
+}
+
+.nav-left{
+    width: 100%;
+}
+
+#logo{
+    height: 7%;
+    position: fixed;
+    top: 5px;
+    left: 20px;
+}
