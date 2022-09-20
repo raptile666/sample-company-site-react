@@ -1,0 +1,92 @@
+.main{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail{
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20%;
+}
+
+.detail p{
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.detail h1{
+    text-transform: uppercase;
+    font-size: 2.8rem;
+}
+
+.detail button{
+    background-color: #d6d6d6;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 15px 35px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: all .25s ease-in;
+}
+
+.detail button:hover{
+    background-color: #2b2b2b;
+    color: aliceblue;
+    transition: all .25s ease-in;
+}
+
+.table{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.cell{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    margin: 15px;
+    border: 3px solid #d2d2d2;
+    border-radius: 5px;
+    transition: all 0.25s ease-in;
+}
+
+.cell:hover{
+    box-shadow: #a1a1a1 2px 2px 10px, #a1a1a1 -2px -2px 10px;
+    transition: all 0.25s ease-in;
+}
+
+.cell h1{
+    font-size: 1.75rem;
+    text-transform: uppercase;
+}
+
+.pictext{
+    text-align: center;
+    height: 50%;
+}
+
+.pic{
+    height: 50%;
+}
+
+.cell svg{
+    font-size: 6.75rem;
+}

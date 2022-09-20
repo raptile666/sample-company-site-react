@@ -35,9 +35,22 @@
 .pages a, .contact a{
     text-decoration: none;
     color: aliceblue;
-    padding: 5px 0;
 }
 
-.contact span, .copyright span{
+.contact div, .copyright div{
     margin-right: 10px;
+}
+
+.cont{
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.pagelink{
+    display: flex;
+    flex-direction: column;
+}
+
+.pagelink a{
+    margin-bottom: 5px;
 }
