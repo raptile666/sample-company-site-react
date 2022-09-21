@@ -1,0 +1,99 @@
+.about-main{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-detail{
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 55%;
+}
+
+.about-detail h1{
+    font-size: 2.875rem;
+}
+
+.about-detail p{
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    width: 50%;
+}
+
+.about-detail button{
+    background-color: #d6d6d6;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 15px 35px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: all .25s ease-in;
+}
+
+.about-detail button:hover{
+    background-color: #2b2b2b;
+    color: aliceblue;
+    transition: all .25s ease-in;
+}
+
+.about-small{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #181818;
+    color: aliceblue;
+}
+
+.counter-cont{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter-cont h2{
+    font-size: 2.375rem;
+}
+
+.counters{
+    width:  100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.count{
+    width: 15%;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: #a1a1a1 2px 2px 10px, #a1a1a1 -2px -2px 10px;
+
+}
+
+.count span{
+    font-size: 4.313rem;
+    font-weight: 600;
+}
+
+.count h4{
+    font-size: 1.2rem;
+}
