@@ -21,6 +21,7 @@
 .detail p{
     width: 50%;
     margin-bottom: 50px;
+    font-size: 1.1rem;
 }
 
 .detail h1{
@@ -69,7 +70,7 @@
 }
 
 .cell:hover{
-    box-shadow: #a1a1a1 2px 2px 10px, #a1a1a1 -2px -2px 10px;
+    box-shadow: #a1a1a1 3px 3px 20px, #a1a1a1 -3px -3px 20px;
     transition: all 0.25s ease-in;
 }
 
