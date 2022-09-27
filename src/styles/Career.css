@@ -12,22 +12,22 @@
     margin-bottom: 30px;
 }
 
-a{
+.careerMain a{
     text-decoration: none;
     color: black;
 }
 
-h1{
+.careerMain h1{
     margin-top: 50px;
     margin-bottom: 30px;
 }
 
-h4{
+.careerMain h4{
     margin-top: 0px;
     margin-bottom: 10px;
 }
 
-p{
+.careerMain p{
     width: 40%;
     text-align: center;
     margin-top: 0;
@@ -38,7 +38,7 @@ p{
     margin-top: 40px;
 }
 
-ul{
+.careerMain ul{
     margin: 0px;
     margin-bottom: 40px;
 }
