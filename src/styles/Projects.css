@@ -7,6 +7,11 @@
     height: auto;
 }
 
+.projectMain h1{
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
 .projectContainer{
     width: 100%;
     height: auto;
@@ -14,6 +19,11 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
+}
+
+.projectContainer h2{
+    margin-top: 15px;
+    margin-bottom: 50px;
 }
 
 .logoContainer{
