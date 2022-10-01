@@ -1,11 +1,16 @@
 import React from 'react';
 import Logos from '../Logos';
 import '../styles/Projects.css';
+import { motion } from 'framer-motion';
 
 const Projects = () => {
   
   return (
-    <div className='projectMain'>
+    <motion.div className='projectMain'
+    initial={{ opacity: 0}}
+    animate={{ opacity: 1}}
+    exit={{ opacity: 0}}
+    >
       <h1>Our Biggest Partners</h1>
       <div className='projectContainer'>
         {Logos.map((logo) => {
@@ -23,7 +28,7 @@ const Projects = () => {
           )
         })}
       </div>
-    </div>
+    </motion.div>
   )
 }
 

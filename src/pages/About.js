@@ -2,12 +2,17 @@ import React from 'react';
 import CountUp from 'react-countup';
 import AboutPic from '../assets/about-bg.jpg';
 import { Link } from 'react-router-dom';
-import '../styles/About.css'
+import '../styles/About.css';
+import { motion } from 'framer-motion';
 
 const About = () => {
 
   return (
-    <div className='about-main'>
+    <motion.div className='about-main'
+    initial={{ opacity: 0}}
+    animate={{ opacity: 1}}
+    exit={{ opacity: 0}}
+    >
       <div className='about-detail' style={{ backgroundImage: `url(${AboutPic})` }}>
         <h1>What is this?</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet sequi, cupiditate accusantium, voluptatum fugiat voluptate, dolorum nulla voluptas velit delectus in saepe eius placeat? Inventore quo necessitatibus eius dicta, quibusdam tenetur quasi quae voluptas veniam magnam sed a, eos impedit, vitae esse delectus eveniet asperiores temporibus ullam voluptatibus aspernatur commodi exercitationem in officia. Beatae culpa atque qui repellat ex aperiam tempore, hic porro adipisci praesentium voluptatibus, modi explicabo et odio eius repellendus!</p>
@@ -42,7 +47,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

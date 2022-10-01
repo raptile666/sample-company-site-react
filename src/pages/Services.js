@@ -3,6 +3,7 @@ import '../styles/Services.css';
 import { SupportAgent } from '@mui/icons-material';
 import servicePic from '../assets/service-bg.jpg';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const Services = () => {
 
@@ -41,7 +42,11 @@ const Services = () => {
   }
 
   return (
-    <div className='serviceMain' style={{backgroundImage: `url(${servicePic})`}}>
+    <motion.div className='serviceMain' style={{backgroundImage: `url(${servicePic})`}}
+    initial={{ opacity: 0}}
+    animate={{ opacity: 1}}
+    exit={{ opacity: 0}}
+    >
       <div className='desktopView'>
         <h1>Services</h1>
         <SupportAgent />
@@ -94,7 +99,7 @@ const Services = () => {
         <h1>Services</h1>
         <SupportAgent /> 
       </div>
-    </div>
+    </motion.div>
   )
 }
 

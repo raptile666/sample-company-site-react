@@ -85,6 +85,7 @@
     text-align: center;
     margin: 20px;
     padding: 20px;
+    border-radius: 10px;
     box-shadow: #a1a1a1 2px 2px 10px, #a1a1a1 -2px -2px 10px;
 
 }

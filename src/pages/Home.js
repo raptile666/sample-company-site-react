@@ -3,10 +3,15 @@ import '../styles/Home.css';
 import HomePic from '../assets/home-bg.jpg';
 import { Link } from 'react-router-dom';
 import { LocalFireDepartment, Engineering, SportsMotorsports } from '@mui/icons-material';
+import { motion } from 'framer-motion';
 
 const Home = () => {
   return (
-    <div className='home-main'>
+    <motion.div className='home-main'
+    initial={{ opacity: 0}}
+    animate={{ opacity: 1}}
+    exit={{ opacity: 0}}
+    >
       <div className='detail' style={{ backgroundImage: `url(${HomePic})` }}>
         <h1>The Big Title</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, temporibus provident? Asperiores id beatae illo repellendus earum ea reiciendis vero iusto provident, facere deleniti consequatur laborum quaerat facilis itaque odit voluptatem repudiandae sint? Ullam mollitia fugiat ipsa ipsum, asperiores hic dolores ab distinctio quae aspernatur nesciunt porro quis, aliquam dolore?</p>
@@ -38,7 +43,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

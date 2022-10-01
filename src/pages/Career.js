@@ -1,12 +1,17 @@
 import React from 'react';
 import '../styles/Career.css';
+import { motion } from 'framer-motion';
 
 const Career = () => {
 
 
 
   return (
-    <div className='careerMain'>
+    <motion.div className='careerMain'
+    initial={{ opacity: 0}}
+    animate={{ opacity: 1}}
+    exit={{ opacity: 0}}
+    >
       <h1>The Position We are looking for</h1>
       <div className='divider'></div>
 
@@ -43,7 +48,7 @@ const Career = () => {
       </ul>
 
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit <strong><a href="mailto:john@sample.sam">john@sample.sam</a></strong>. Nesciunt at ipsam placeat! Magni laudantium veritatis maiores tenetur. Autem fugiat ipsam corporis?</p>
-    </div>
+    </motion.div>
   )
 }
 
