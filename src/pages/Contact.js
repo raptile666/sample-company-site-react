@@ -1,22 +1,9 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React from 'react';
 import {PhoneAndroid, MailOutline} from '@mui/icons-material';
 import '../styles/Contact.css';
 import { motion } from 'framer-motion';
 
 const Contact = () => {
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_9syeaqj', 'template_omprk5r', form.current, 'S9ALKpcTjRGuSEkCv')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-  };
 
   return (
     <motion.div className='contactMain'
@@ -33,7 +20,7 @@ const Contact = () => {
       </div>
 
       <div className='formdiv'>
-        <form ref={form} onSubmit={sendEmail}>
+        <form>
           <input type="text" name="user_name" placeholder='Name' required/>
           <input type="email" name="user_email" placeholder='E-Mail' required/>
           <textarea name="message" placeholder='Message' rows={4} />
