@@ -10,7 +10,7 @@ const Footer = () => {
       
       <div className='footer'>
         <div className='logo'>
-          <img src={TextLogo} alt="TextLogo" id='textlogo' />
+          <img src={TextLogo} alt="TextLogo" title='TextLogo' id='textlogo' />
         </div>
 
         <div className='contact'>
@@ -37,7 +37,7 @@ const Footer = () => {
       </div>
 
       <div className='copyright'>
-        <div>2022 © All Rights Reserved | László Szilágyi</div> <div><LinkedIn /></div> <div><GitHub /></div>
+        <div className='copy-content'>2022 © All Rights Reserved | László Szilágyi</div> <div className='copy-content'><LinkedIn /></div> <div className='copy-content'><GitHub /></div>
       </div>
     </div>
   )
