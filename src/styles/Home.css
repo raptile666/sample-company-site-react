@@ -85,9 +85,64 @@
 }
 
 .pic{
+    display: flex;
     height: 50%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
-.cell svg{
+.pic svg{
+    margin: 0 auto;
     font-size: 6.75rem;
 }
+
+@media screen and (max-width: 1870px){
+    .cell{
+        height: 25vh;
+    }
+}
+
+@media screen and (max-width: 1610px){
+    .table{
+        width: 100%;
+    }
+    
+    .cell{
+        height: 25vh;
+    }
+}
+
+@media screen and (max-width: 1001px){
+
+    .home-main{
+        height: auto;
+    }
+
+    .detail{
+        padding: 50px 0;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    .detail p{
+        text-align: justify;
+    }
+
+    .table{
+        flex-direction: column;
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .cell{
+        width: 60%;
+        height: auto;
+    }
+
+    .pic svg{
+        fill: black;
+    }
+}
+
