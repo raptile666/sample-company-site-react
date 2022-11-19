@@ -126,6 +126,10 @@
         height: auto;
     }
 
+    .detail h1{
+        text-align: center;
+    }
+
     .detail p{
         text-align: justify;
     }
