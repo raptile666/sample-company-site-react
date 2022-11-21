@@ -124,11 +124,11 @@
         background: aliceblue;
     }
 
-    svg{
+    .nav-right svg{
         cursor: pointer;
         font-size: 1.5rem;
         margin: auto 20px;
-        color: aliceblue;
+        fill: aliceblue;
     }
 
     #logo{
