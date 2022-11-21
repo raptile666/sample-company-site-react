@@ -47,7 +47,7 @@ const Services = () => {
     animate={{ opacity: 1}}
     exit={{ opacity: 0}}
     >
-      <div className='desktopView'>
+      <div className='main2'>
         <h1>Services</h1>
         <SupportAgent />
         
@@ -91,14 +91,46 @@ const Services = () => {
           </div>
 
         </div>
+
+        <div className='phoneView'>
+          <button className={firstButton} id='topButton' onClick={() => {firstButtonClick()}}>List 1</button>
+          <ul className={firstList}>
+            <li>Apple</li>
+            <li>Pear</li>
+            <li>Peach</li>
+            <li>Strawberry</li>
+            <li>Plum</li>
+            <li>Pineapple</li>
+            <li>Redcurrant</li>
+            <li>Blueberry</li>
+            <li>Raspberry</li>
+          </ul>
+
+          <button className={secondButton} onClick={() => {secondButtonClick()}}>List 2</button>
+          <ul className={secondList}>
+            <li>Carrot</li>
+            <li>Parsley</li>
+            <li>Radish</li>
+            <li>Onion</li>
+            <li>Celery</li>
+            <li>Cabbage</li>
+            <li>Bean</li>
+          </ul>
+
+          <button className={thirdButton} id='botButton' onClick={() => {thirdButtonClick()}}>List 3</button>
+          <ul className={thirdList}>
+            <li>Wheat</li>
+            <li>Corn</li>
+            <li>Barley</li>
+            <li>Rye</li>
+          </ul>
+
+
+        </div>
         
         <Link to='/contact'><button className='contactButton'>Contact</button></Link>
       </div>
 
-      <div className='phoneView'>
-        <h1>Services</h1>
-        <SupportAgent /> 
-      </div>
     </motion.div>
   )
 }
