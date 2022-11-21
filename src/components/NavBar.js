@@ -21,7 +21,7 @@ const NavBar = () => {
 
       <div className='navbar-desktop'>
           <div className='nav-left'>
-              <img src={Logo} alt="logo" id='logo'/>
+              <img src={Logo} alt="logo" text="logo" id='logo'/>
           </div>
 
           <div className="nav-right">
