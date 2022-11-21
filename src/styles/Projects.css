@@ -10,6 +10,7 @@
 .projectMain h1{
     margin-top: 70px;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .projectContainer{
@@ -17,11 +18,12 @@
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
     align-items: center;
     justify-content: center;
 }
 
-.projectContainer h2{
+.logoContainer h2{
     margin-top: 15px;
     margin-bottom: 50px;
 }
@@ -45,4 +47,39 @@
 .show{
     opacity: 1;
     transition: all 0.5s ease;
+}
+
+@media screen and (max-width:1220px) {
+    .logoContainer img{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:880px) {
+
+    .projectContainer{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .logoContainer img{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:660px) {
+
+    .projectContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:440px) {
+
+    .projectContainer{
+        grid-template-columns: 1fr;
+    }
+
+    .logoContainer img{
+        width: 40%;
+    }
 }

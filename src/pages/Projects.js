@@ -16,7 +16,7 @@ const Projects = () => {
         {Logos.map((logo) => {
           return(
             <div className='logoContainer'>
-              <img src={logo.image} alt={logo.text}
+              <img src={logo.image} alt={logo.text} text={logo.text}
                 onMouseEnter={( prop ) => 
                 { prop.target.nextElementSibling.className = 'show' }} 
                 
