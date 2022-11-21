@@ -1,5 +1,5 @@
 .home-main{
-    height: 90vh;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -8,7 +8,7 @@
 }
 
 .detail{
-    height: 50vh;
+    height: auto;
     background-repeat: no-repeat;
     background-size: cover;
     color: aliceblue;
@@ -16,6 +16,8 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 20%;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 .detail p{
@@ -49,7 +51,7 @@
 }
 
 .table{
-    height: 40vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,7 +60,7 @@
 
 .cell{
     width: 100%;
-    height: 20vh;
+    height: 320px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,33 +99,18 @@
     font-size: 6.75rem;
 }
 
-@media screen and (max-width: 1870px){
-    .cell{
-        height: 25vh;
-    }
-}
-
 @media screen and (max-width: 1610px){
     .table{
         width: 100%;
-    }
-    
-    .cell{
-        height: 25vh;
     }
 }
 
 @media screen and (max-width: 1001px){
 
-    .home-main{
-        height: auto;
-    }
-
     .detail{
         padding: 50px 0;
         align-items: center;
         justify-content: center;
-        height: auto;
     }
 
     .detail h1{
@@ -132,17 +119,16 @@
 
     .detail p{
         text-align: justify;
+        width: 80%;
     }
 
     .table{
         flex-direction: column;
-        height: auto;
         padding: 50px 0;
     }
 
     .cell{
         width: 60%;
-        height: auto;
     }
 
     .pic svg{
@@ -150,3 +136,8 @@
     }
 }
 
+@media screen and (max-width: 1001px){
+    .cell{
+        height: auto;
+    }
+}

@@ -150,10 +150,10 @@
     }
 
     .phoneView button{
-        height: 3vh;
+        height: auto;
         font-weight: 600;
         text-align: left;
-        padding-left: 20px;
+        padding: 5px 20px;
         width: 100%;
     }
 
