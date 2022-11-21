@@ -61,7 +61,7 @@
     }
 
     .navbar-mobile{
-        height: 3vh;
+        height: 25px;
         display: flex;
         width: 100%;
         background-color: #2b2b2b;
@@ -77,6 +77,10 @@
         justify-content: center;
         position: absolute;
         height: auto;
+    }
+
+    .nav-right, .nav-left{
+        width: 100%;
     }
 
     .hamburger{
@@ -124,16 +128,9 @@
         margin: auto 20px;
         color: aliceblue;
     }
-}
 
-@media screen and (max-width: 540px){
     #logo{
-        height: 5%;
+        height: 50px;
     }
 }
 
-@media screen and (max-width: 300px){
-    #logo{
-        height: 4%;
-    }
-}

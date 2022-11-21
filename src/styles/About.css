@@ -61,7 +61,7 @@
 }
 
 .counter-cont{
-    height: 30vh;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -85,6 +85,7 @@
     width: 15%;
     text-align: center;
     margin: 20px;
+    margin-bottom: 30px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: #a1a1a1 2px 2px 10px, #a1a1a1 -2px -2px 10px;
@@ -102,13 +103,20 @@
 
 @media screen and (max-width: 1595px){
     .about-detail{
-        padding-left: 50%;
+        padding-left: 45%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        height: auto;
+    }
+
+    .counter-cont{
+        height: auto;
     }
 }
 
 @media screen and (max-width: 1335px){
     .about-detail{
-        padding-left: 0;
+        padding: 30px 0;
         align-items: center;
     }
 
@@ -119,10 +127,26 @@
     .about-detail p{
         text-align: justify;
     }
+
+    .about-small{
+        padding: 20px 0;
+    }
+
+    .counter-cont{
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 1245px){
     
+    .about-detail, .about-small{
+        height: auto;
+    }
+
+    .about-detail{
+        padding: 30px;
+    }
+
     .counter-cont{
         height: auto;
         margin-bottom: 30px;
@@ -140,15 +164,9 @@
 }
 
 @media screen and (max-width: 655px){
-    .about-detail, .about-small{
-        height: auto;
-    }
-    .about-detail{
-        padding: 30px 30px;
-    }
 
     .about-detail p{
-        width: 100%;
+        width: 80%;
     }
 
     .counters{
@@ -156,5 +174,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .count{
+        width: 70%;
     }
 }
