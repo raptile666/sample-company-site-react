@@ -1,12 +1,12 @@
 .contactMain{
-    width: 100%;
+    font-size: 1.1rem;
+    width: 75%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 80px auto 30px;
 }
 
 .textdiv h1{
@@ -15,8 +15,9 @@
 }
 
 .textdiv h4{
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 0;
+    display: flex;
+    align-items: center;
 }
 
 .textdiv a{
@@ -27,19 +28,17 @@
 }
 
 .formdiv, .textdiv{
-    height: 30vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .formdiv{
-    width: 550px;
+    width: 25%;
 }
 
 .textdiv{
-    width: 500px;
+    width: 25%;
 }
 
 .formdiv form{
@@ -77,4 +76,85 @@
     background-color: #2b2b2b;
     color: aliceblue;
     transition: all 0.2s ease-in;
+}
+
+@media screen and (max-width: 2200px) {
+
+    .formdiv{
+        width: 30%;
+    }    
+}
+
+@media screen and (max-width: 1920px) {
+
+    .formdiv{
+        width: 40%;
+    }    
+}
+
+@media screen and (max-width: 1440px) {
+
+    .formdiv{
+        width: 50%;
+    }    
+}
+
+@media screen and (max-width: 1170px) {
+
+    .contactMain{
+        width: 100%;
+    }    
+}
+
+@media screen and (max-width: 920px) {
+
+    .contactMain{
+        flex-direction: column;
+    }
+    
+    .textdiv{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .textdiv h1{
+        margin: 0 20px;
+    }
+
+    .textdiv h4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10px;
+    }
+
+    .textdiv a{
+        margin: 0;
+        margin-right: 20px;
+    }
+
+    .formdiv{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .textdiv{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 75%;
+    }
+
+    .textdiv a{
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .formdiv, .textdiv{
+        width: 90%;
+    }
 }

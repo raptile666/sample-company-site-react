@@ -13,9 +13,9 @@ const Contact = () => {
     >
       <div className='textdiv'>
         <h1>Contact</h1>
-        <h4><PhoneAndroid /> Mobil</h4>
+        <h4><PhoneAndroid /> <p>Mobil</p> </h4>
         <a href="tel:+36123456789">+36 12 345 6789</a>
-        <h4><MailOutline /> E-Mail</h4>
+        <h4><MailOutline /> <p>E-Mail</p> </h4>
         <a href="mailto:john@sample.sam">john@sample.sam</a>
       </div>
 
